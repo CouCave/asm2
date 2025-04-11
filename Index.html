@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT - ASS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="ASS.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">   
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-md flex flex-col fixed top-0 left-0 bottom-0">
+            <!-- Sidebar Header -->
+            <div class="p-4 border-b flex items-center justify-center logo">
+                <img src="FFISZIM.png" alt="Logo" class="logo-img">
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="flex-1 p-4 space-y-1">
+                <a href="Index.html" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Trang chủ</a>
+            
+                <div class="relative group">
+                    <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Giới thiệu</a>
+            
+                    <!-- Menu con -->
+                    <div class="absolute left-full top-0 ml-2 hidden group-hover:block bg-white border rounded shadow-lg w-40 z-10">
+                        <a href="SoDo.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sơ đồ tổ chức</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Thư viện</a>
+                    </div>
+                </div>
+            
+                <a href="LienHe.html" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Liên hệ</a>
+                <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Góp ý</a>
+                <a href="HoiDap.html" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Hỏi đáp</a>
+
+        </aside>
+
+        <!-- Main Content -->
+<div class="flex-1 flex flex-col ml-64">
+    <!-- Navbar -->
+    <header class="bg-white shadow p-4 flex justify-between items-center fixed top-0 left-64 right-0 z-50">
+        <div class="relative w-80">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm..."
+                class="w-full p-3 pl-10 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <svg class="absolute left-3 top-3 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-4.35-4.35M16.65 10.65a6 6 0 1 0-8.49 8.49 6 6 0 0 0 8.49-8.49z" />
+            </svg>
+        </div>
+
+        <div class="flex items-center space-x-4">
+            <div class="relative">
+                <img src="Cat.jpg" class="h-10 w-10 rounded-full cursor-pointer" id="userMenuButton">
+                <div id="userMenu" class="hidden absolute right-0 mt-2 w-48 bg-white shadow-md rounded">
+                    <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">👤 Hồ sơ</a>
+                    <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">⚙️ Cài đặt</a>
+                    <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">🚪 Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+    </header>
+           
+            <!-- Page Content -->
+            
+            <main class="p-6 flex-1 mt-24">
+                <header class="p-6 flex-1 bg-gray-100">
+                <img src="Banner1.jpg" alt="FPT" class="w-full h-64 object-cover rounded-lg shadow" />
+            </header>
+            <br>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-6 h-6 text-blue-500 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 10h11M9 21V3m0 18l6-6M15 15h6" />
+                            </svg>
+                            <h2 class="text-xl font-bold mb-2 text-blue-800">Công nghệ thông tin</h2>
+                        </div>
+                        <p class="text-gray-700">
+                            Ngành học đào tạo kỹ năng lập trình, quản trị mạng, an toàn thông tin và xử lý dữ liệu. Sinh viên được học qua dự án thực tế, sẵn sàng cho môi trường làm việc chuyên nghiệp.
+                            </p>
+                    </div>
+                
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h2 class="text-lg font-semibold">Digital Marketing</h2>
+                        </div>
+                        <p class="text-gray-700">
+                            Ngành học tập trung vào quảng bá sản phẩm qua nền tảng số như mạng xã hội, SEO, Google Ads. Sinh viên được rèn kỹ năng sáng tạo nội dung, phân tích dữ liệu và chiến lược truyền thông.
+                            </p>
+                    </div>
+                
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-lg shadow p-6">
+                        <div class="flex items-center mb-4">
+                            <svg class="w-6 h-6 text-red-500 mr-2" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <h2 class="text-lg font-semibold">Thiết kế đồ họa</h2>
+                        </div>
+                        <p class="text-gray-700">
+                            Chuyên ngành đào tạo kỹ năng sáng tạo hình ảnh, bố cục, màu sắc và sử dụng các phần mềm thiết kế chuyên nghiệp. Sinh viên có thể làm việc trong lĩnh vực quảng cáo, truyền thông, thương hiệu.
+                            </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                      
+                      <!-- Sinh viên có việc làm -->
+                      <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <i class="fa-regular fa-user-graduate text-red-500 text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">97,7%</h3>
+                        <p class="text-gray-600">Sinh viên có việc làm</p>
+                      </div>
+                      
+                      <!-- Doanh nghiệp đối tác -->
+                      <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <i class="fa-regular fa-certificate text-red-500 text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">2000+</h3>
+                        <p class="text-gray-600">Doanh nghiệp đối tác</p>
+                      </div>
+                      
+                      <!-- Sinh viên & Cựu SV -->
+                      <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <i class="fa-regular fa-graduation-cap text-red-500 text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">40.000</h3>
+                        <p class="text-gray-600">Sinh viên & Cựu SV</p>
+                      </div>
+                      
+                      <!-- Đào tạo toàn quốc -->
+                      <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                        <i class="fa-regular fa-bookmark text-red-500 text-3xl mb-2"></i>
+                        <h3 class="text-2xl font-bold text-gray-900">30 Cơ sở+</h3>
+                        <p class="text-gray-600">Đào tạo toàn quốc</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                <br>
+                <br>
+                <div class="bg-white rounded-lg shadow p-6 col-span-1 md:col-span-2 lg:col-span-1">
+                    <!-- Tiêu đề và bộ chọn tháng/năm cùng hàng -->
+                    <div class="flex justify-between items-center mb-4">
+                      <h2 class="text-xl font-bold">📅 Lịch</h2>
+                      <div class="flex items-center gap-2">
+                        <select id="monthSelect" class="border p-2 rounded">
+                          <!-- JavaScript sẽ điền tháng -->
+                        </select>
+                        <select id="yearSelect" class="border p-2 rounded">
+                          <!-- JavaScript sẽ điền năm -->
+                        </select>
+                      </div>
+                    </div>
+                  
+                    <!-- Lịch -->
+                    <div id="calendar" class="grid grid-cols-7 gap-2 text-center text-sm text-gray-800">
+                      <div class="font-semibold">CN</div>
+                      <div class="font-semibold">T2</div>
+                      <div class="font-semibold">T3</div>
+                      <div class="font-semibold">T4</div>
+                      <div class="font-semibold">T5</div>
+                      <div class="font-semibold">T6</div>
+                      <div class="font-semibold">T7</div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+
+                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                      <div class="bg-white rounded-2xl shadow-lg p-8">
+                        <h2 class="text-2xl font-bold text-red-600 mb-6">Tổng quan về Tập đoàn FPT</h2>
+                        <p class="text-gray-700 mb-4">
+                          FPT là tập đoàn công nghệ hàng đầu Việt Nam, tiên phong trong chuyển đổi số với 35 năm kinh nghiệm. 
+                          Tập đoàn FPT ngày nay phát triển mạnh mẽ với 4 lĩnh vực chính: Công nghệ, Viễn thông, Giáo dục và Đầu tư.
+                        </p>
+                  
+                        <h2 class="text-2xl font-bold text-red-600 mb-6">Tầm nhìn chiến lược</h2>
+                        <p class="text-gray-700 mb-4">
+                          Trở thành tập đoàn công nghệ toàn cầu hàng đầu, tiên phong cung cấp các sản phẩm, dịch vụ và giải pháp công nghệ mới, 
+                          góp phần xây dựng một thế giới tốt đẹp hơn.
+                        </p>
+                  
+                        <h2 class="text-2xl font-bold text-red-600 mb-6">Sứ mệnh</h3>
+                        <p class="text-gray-700">
+                          Kiến tạo hệ sinh thái toàn diện từ Công nghệ, Viễn thông đến Giáo dục, 
+                          mang lại giá trị bền vững cho khách hàng, đối tác, người lao động và cộng đồng.
+                        </p>
+                      </div>
+                    </div>
+                  
+                  
+            </main>
+            <footer class="bg-white text-center py-4 shadow-inner mt-auto">
+                <p class="text-gray-500 text-sm">FPT Polytechnic © 2025, All Rights Reserved</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("userMenuButton").addEventListener("click", function () {
+            document.getElementById("userMenu").classList.toggle("hidden");
+        });
+        const calendar = document.getElementById("calendar");
+  const monthSelect = document.getElementById("monthSelect");
+  const yearSelect = document.getElementById("yearSelect");
+
+  // Tạo danh sách tháng
+  const monthNames = [
+    "Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6",
+    "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"
+  ];
+
+  for (let i = 0; i < 12; i++) {
+    const option = document.createElement("option");
+    option.value = i;
+    option.textContent = monthNames[i];
+    monthSelect.appendChild(option);
+  }
+
+  // Tạo danh sách năm
+  const currentYear = new Date().getFullYear();
+  for (let i = currentYear - 5; i <= currentYear + 5; i++) {
+    const option = document.createElement("option");
+    option.value = i;
+    option.textContent = i;
+    yearSelect.appendChild(option);
+  }
+
+  // Hiển thị lịch
+  function generateCalendar(year, month) {
+    // Xoá lịch cũ
+    calendar.querySelectorAll(".day").forEach(el => el.remove());
+
+    const date = new Date(year, month, 1);
+    const startDay = date.getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // Thêm ô trống trước ngày 1
+    for (let i = 0; i < startDay; i++) {
+      const blank = document.createElement("div");
+      calendar.appendChild(blank);
+    }
+
+    // Thêm ngày
+    for (let day = 1; day <= daysInMonth; day++) {
+      const cell = document.createElement("div");
+      cell.textContent = day;
+      cell.className = "day p-2 rounded hover:bg-blue-100 cursor-pointer";
+      calendar.appendChild(cell);
+    }
+  }
+
+  // Khởi tạo lịch với ngày hiện tại
+  const today = new Date();
+  monthSelect.value = today.getMonth();
+  yearSelect.value = today.getFullYear();
+  generateCalendar(today.getFullYear(), today.getMonth());
+
+  // Lắng nghe thay đổi
+  monthSelect.addEventListener("change", () => {
+    generateCalendar(parseInt(yearSelect.value), parseInt(monthSelect.value));
+  });
+
+  yearSelect.addEventListener("change", () => {
+    generateCalendar(parseInt(yearSelect.value), parseInt(monthSelect.value));
+  });
+
+    </script>
+</body>
+</html>

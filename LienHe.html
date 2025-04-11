@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link href="ASS.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">   
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow-md flex flex-col fixed top-0 left-0 bottom-0">
+            <!-- Sidebar Header -->
+            <div class="p-4 border-b flex items-center justify-center logo">
+                <img src="FFISZIM.png" alt="Logo" class="logo-img">
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="flex-1 p-4 space-y-1">
+                <a href="Index.html" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Trang chủ</a>
+            
+                <div class="relative group">
+                    <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Giới thiệu</a>
+            
+                    <!-- Menu con -->
+                    <div class="absolute left-full top-0 ml-2 hidden group-hover:block bg-white border rounded shadow-lg w-40 z-10">
+                        <a href="SoDo.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sơ đồ tổ chức</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Thư viện</a>
+                    </div>
+                </div>
+            
+                <a href="LienHe.html" id="menuLienHe" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Liên hệ</a>
+                <a href="#" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Góp ý</a>
+                <a href="HoiDap.html" class="block p-2 text-gray-700 hover:bg-gray-200 rounded">Hỏi đáp</a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col ml-64">
+            <!-- Navbar -->
+             
+            <header class="bg-white shadow p-4 flex justify-between items-center">
+                <div class="relative w-80">
+                    <input type="text" id="searchInput" placeholder="Tìm kiếm..."
+                        class="w-full p-3 pl-10 text-gray-700 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <svg class="absolute left-3 top-3 h-5 w-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M16.65 10.65a6 6 0 1 0-8.49 8.49 6 6 0 0 0 8.49-8.49z"/>
+                    </svg>
+                </div>
+            
+                <script>
+                    document.getElementById("searchInput").addEventListener("keypress", function(event) {
+                        if (event.key === "Enter") {
+                            alert("Bạn đã tìm kiếm: " + this.value);
+                        }
+                    });
+                </script>
+                <div></div>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <img src="Cat.jpg" class="h-10 w-10 rounded-full cursor-pointer" id="userMenuButton">
+                        <div id="userMenu" class="hidden absolute right-0 mt-2 w-48 bg-white shadow-md rounded">
+                            <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">👤 Hồ sơ</a>
+                            <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">⚙️ Cài đặt</a>
+                            <a href="404.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">🚪 Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Page Content -->
+            <main class="p-6 flex-1">
+                <header class="p-6 flex-1 bg-gray-100">
+                    <img src="Header.jpg" alt="FPT" class="w-full h-64 object-cover rounded-lg shadow" />
+                </header>
+                <!-- LienHe.html -->
+                <div class="bg-white rounded-lg shadow p-6 max-w-6xl mx-auto flex flex-col md:flex-row gap-6">
+                        <!-- Thông tin liên hệ -->
+                        <div class="flex-1">
+                          <h2 class="text-2xl font-bold text-blue-600 mb-4">📬 Liên hệ với chúng tôi</h2>
+                          <p class="text-gray-700 text-lg mb-6">Bạn có thể liên hệ với chúng tôi qua các thông tin sau:</p>
+                      
+                          <div class="space-y-4 text-gray-700 text-base mb-6">
+                            <div class="flex items-center gap-3">
+                              <span class="text-blue-500 text-xl">📧</span>
+                              <span><strong>Email:</strong> caodang@fpt.edu.vn</span>
+                            </div>
+                      
+                            <div class="flex items-center gap-3">
+                              <span class="text-blue-500 text-xl">📞</span>
+                              <span><strong>Điện thoại:</strong> (024)6 327 6402 - 0981 725 836</span>
+                            </div>
+                      
+                            <div class="flex items-center gap-3">
+                              <span class="text-blue-500 text-xl">🏫</span>
+                              <span><strong>Địa chỉ:</strong> 449 Lê Văn Việt, Quận 9, TP.Thủ Đức</span>
+                            </div>
+                          </div>
+                      
+                          <!-- Mạng xã hội -->
+                          <div>
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">🌐 Mạng xã hội:</h3>
+                            <div class="flex gap-6 items-center text-lg">
+                                <a href="https://www.facebook.com/fpshcmunderground.ptcdhcm?locale=vi_VN" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                                  <i class="fa-brands fa-facebook text-2xl"></i> Facebook
+                                </a>
+                                <a href="404.html" target="_blank" class="text-red-600 hover:text-red-800 flex items-center gap-2">
+                                  <i class="fa-brands fa-youtube text-2xl"></i> YouTube
+                                </a>
+                                <a href="https://polyschool.fpt.edu.vn/?fbclid=IwY2xjawJkf5JleHRuA2FlbQIxMAABHpIFixBVX3OtM00gNxgBf4Ha_Qx1_7_NDarKxQaeZQ2egKv4GU9-gTGXNrDB_aem_PxVzMdEZLz9y_CMebrZtFg" target="_blank" class="text-green-600 hover:text-green-800 flex items-center gap-2">
+                                  <i class="fa-solid fa-globe text-2xl"></i> Website
+                                </a>
+                              </div>
+                          </div>
+                        </div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+                    <!-- Bản đồ -->
+                    <div class="flex-1">
+                      <iframe
+                        src="https://www.google.com/maps?q=449+Lê+Văn+Việt,+Quận+9,+TP+Thủ+Đức&output=embed"
+                        width="100%"
+                        height="300"
+                        class="rounded-lg shadow border border-gray-300"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                    </div>
+                  </div>
+
+                  
+                
+            </main>
+            <footer class="bg-white text-center py-4 shadow-inner mt-auto">
+                <p class="text-gray-500 text-sm">FPT Polytechnic © 2025, All Rights Reserved</p>
+            </footer>
+        </div>
+        
+    </div>
+
+    <script>
+        document.getElementById("userMenuButton").addEventListener("click", function () {
+            document.getElementById("userMenu").classList.toggle("hidden");
+        });
+        document.getElementById("userMenuButton").addEventListener("click", function () {
+        document.getElementById("userMenu").classList.toggle("hidden");
+    });
+
+    function loadPage(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("mainContent").innerHTML = html;
+            })
+            .catch(error => {
+                console.error("Lỗi tải trang:", error);
+            });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const lienHeLink = document.getElementById("menuLienHe");
+        if (lienHeLink) {
+            lienHeLink.addEventListener("click", function (e) {
+                e.preventDefault();
+                loadPage("LienHe.html");
+            });
+        }
+    });
+    
+    </script>
+    
+</body>
+</html>
+
